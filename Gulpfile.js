@@ -5,14 +5,14 @@ var minifyHTML = require('gulp-minify-html');
 
 // Minify CSS
 gulp.task('minicss', function() {
-  gulp.src('./dev/css/*.css')
+  gulp.src('./dev/css/main.css')
     .pipe(minifyCss())
     .pipe(gulp.dest('./build/css'));
 });
 
 // Minify JavaScript
 gulp.task('minijs', function() {
-  gulp.src('./dev/js/*.js')
+  gulp.src('./dev/js/main.js')
     .pipe(uglify())
     .pipe(gulp.dest('./build/js'));
 });
