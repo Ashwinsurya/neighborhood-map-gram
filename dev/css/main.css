@@ -30,6 +30,9 @@ li {
   max-width: 150px;
   height: 100%;
   overflow: scroll;
+  position: absolute;
+  z-index: 1000;
+  right: 0;
 }
 
 #instagram ul {
@@ -63,5 +66,10 @@ li {
 
 
 #pac-input {
+  z-index: 2000;
+  position: absolute;
   width: 300px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 1.2em;
 }
